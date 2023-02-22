@@ -1,0 +1,357 @@
+.header{
+    color: var(--white-color);    
+}
+
+.header__navbav{
+    height: var(--header-height);
+    background-color: var(--frame-color);
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header__navbav_title{
+    font-size: 2.4rem;
+    margin: auto;
+    align-items: center;
+    position: absolute;
+    top: 2.4rem;
+    left: 8%;
+}
+
+.header__navbar_link{
+    display: flex;
+    margin: auto;
+}
+
+.header__navbar_link_img{
+    height: 4.0rem;
+}
+
+
+/* CONTAINER */
+.container{
+    color: var(--white-color);
+    position: relative;
+    top: var(--header-height);
+    padding: 2.0rem;
+    justify-content: center;
+    display: flex;
+}
+
+.container__grid_left{
+}
+
+.container__grid_center{
+    padding-left: var(--magrin-border);
+    padding-right: var(--magrin-border);
+    box-sizing: border-box;
+}
+
+.container__grid_right{
+
+}
+
+/* PROFILE */
+.container__profile{
+    width: 360px;
+    height: 530px;
+    background-color: var(--frame-color);
+    border-radius: var(--border-radius);
+    position: relative;
+    padding: 30px;
+}
+
+.container__profile_avatar{
+    width: 300px;
+    height: 300px;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container__profile_avatar_img{
+    
+}
+
+.container__profile_text{
+    position: absolute;
+    bottom: 30px;
+    margin: auto;
+}
+
+.container__profile_text_firstname{
+    padding: 10px 0;
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.container__profile_text_lastname{
+    padding: 20px 0;
+    margin: 0;
+    font-size: 4rem;
+}
+
+.container__profile_text_username{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+/* Education */
+.container__edu{
+    width: 360px;
+    height: 230px;
+    font-size: var(--fsize-container);
+    background-color: var(--frame-color);
+    border-radius: var(--border-radius);
+    margin: 22px 0 0 0;
+    padding: 30px;
+}
+
+.container__edu_list{
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+.container__edu_item{
+    margin-bottom: 20px;
+}
+
+.container__edu_item h4{
+    margin: 10px 0 0 0;
+}
+
+.container__edu_item span{
+
+}
+
+/* ABOUT ME */
+.container__about{
+    width: 855px;
+    height: 328px;
+    background-color: var(--frame-color);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    font-size: var(--fsize-container);
+}
+.container__title{
+    margin: 0;
+    padding: 13px 0 20px 0;
+}
+
+.container__about_content{
+    font-weight: 300;
+    line-height: 2.8rem;
+    margin: 0;
+}
+
+.container__about_content b{
+    font-weight: 500;
+}
+
+/* CONTACT */
+.container__contact{
+    width: 855px;
+    height: 180px;
+    background-color: var(--frame-color);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    font-size: var(--fsize-container);
+    position: relative;
+    margin: 22px 0 0 0;
+}
+
+.container__content{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.container__contact_item{
+    display: flex;
+}
+
+.container__contact_icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+.container__contact_icon_link{
+    font-size: 3rem;
+    margin: auto;
+}
+
+.container__contact_text{
+    margin: auto;
+}
+
+.container__contact_title{
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.container__contact_content{
+    padding-top: 5px;
+    margin: 0;
+    user-select: text;
+}
+
+/* SKILL */
+.container__skill{
+    width: 855px;
+    height: 230px;
+    margin-top: 22px;
+    padding: 30px;
+    font-size: var(--fsize-container);
+    border-radius: var(--border-radius);
+    background-color: var(--frame-color);
+}
+
+.container__skill_grip{
+    display: flex;
+    position: relative;
+}
+
+.container__skill_grip::before{
+    content: "";
+    width: 2px;
+    height: 115px;
+    position: absolute;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container__skill_grip_list{
+    width: calc(50% + 10px);
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.container__skill_grip_list:last-child{
+    padding-left: 30px;
+}
+
+.container__skill_grip_list_item{
+    margin-bottom: 15px;
+}
+
+/* SOCIAL */
+.container__social{
+
+}
+
+.container__social_frame_title{
+    width: 494px;
+    height: 68px;
+    background-color: var(--frame-color);
+    border-radius: var(--border-radius);
+    font-size: var(--fsize-container);
+    display: flex;
+    margin-bottom: 0 0 16px 0;
+}
+
+.container__title_social{
+    margin: auto 0 auto 40px;
+    
+}
+
+.container__social_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: var(--fsize-container);
+}
+
+.container__social_list_item{
+}
+
+.container__social_list_item_frame{
+    width: 494px;
+    height: 100px;
+    background-color: var(--frame-color);
+    border-radius: var(--border-radius);
+    margin: 16px 0;
+    display: flex;
+}
+
+.container__social_list_item_link{
+    width: 100%;
+    color: var(--white-color);
+    text-decoration: none;
+    display: flex;
+}
+
+.social_list_item_avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: calc(var(--border-radius) + 10px);
+    overflow: hidden;
+    margin: auto 40px;
+}
+
+.social_list_item_avatar_img{
+    width: 70px;
+}
+
+.social_list_item_avatar_text{
+    margin: auto 0;
+}
+
+.social_list_item_avatar_title{
+    margin: 0;
+    padding-bottom: 16px;
+    font-weight: 500;
+}
+
+.social_list_item_avatar_content{
+    font-weight: 200;
+}
+
+
+/* ERROR */
+.container__developing{
+    width: 100vw;
+    height: 100vh;
+    color: var(--white-color);
+    display: none;
+}
+
+.container__developing div{
+    width: 500px;
+    margin: auto;
+}
+
+.container__developing_img{
+    width: 500px;
+}
+
+.container__developing_text{
+    padding-left: 30px;
+}
+
+.container__developing_title{
+    font-size: 2.8rem;
+    margin: 28px 0 18px 0;
+}
+
+.container__developing_content{
+    font-size: 1.6rem;
+    font-weight: 200;
+}

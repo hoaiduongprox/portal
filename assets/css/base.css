@@ -1,0 +1,50 @@
+:root{
+    --primary-color: #ec4015;
+    --white-color: #fff;
+    --black-color: #000;
+    --background-color: #17181f;
+    --frame-color: #222232;
+
+    --header-height: 65px;
+    --border-radius: 13px;
+    --magrin-border: 16px;
+    --fsize-container: 2rem;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Sarabun', sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.grid{
+    width: 41px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1765px){
+    .container{
+        display: none;
+    }
+
+    .header__navbav_title{
+        display: none;
+    }
+
+    .container__developing{
+        display: flex;
+    }
+}
